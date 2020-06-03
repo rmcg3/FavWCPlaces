@@ -7,7 +7,7 @@ function initialize() {
     zoom: 16
   };
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
+  var map = new google.maps.Map(document.getElementById('map-canvas1'),
     mapOptions);
 
 

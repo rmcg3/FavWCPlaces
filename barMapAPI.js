@@ -1,123 +1,154 @@
 function initialize() {
   var mapOptions = {
     center: {
-      lat: 39.9545904,
-      lng: -75.6029955
+      lat: 39.9557687,
+      lng: -75.6002199
     },
-    zoom: 16
+    zoom: 15
   };
 
   var map0 = new google.maps.Map(document.getElementById('map-canvas0'),
     mapOptions);
 
 
-  var bonBonInfo = new google.maps.InfoWindow({
+  var levanteInfo = new google.maps.InfoWindow({
     content: '<div id="infobox">' +
-      '<h1>Square One Bar</h1><h2>1400 S Michigan Ave</h2>' +
-      'A great bar if you want to avoid the crowds.  ' +
-      'It has a laid back atmosphere but a very welcoming staff.  ' +
-      'It has great specials as well.' +
+      '<h1 class="title"><a href="http://www.levantebrewing.com/" target="blank">Levante Brewing</h1></a>' +
+      '<p1 class = "paragraph"> 208 CARTER DR SUITE 2 WEST CHESTER, PA 19382</p1>' +
+      '<br> </br>' +
+      '<p2 class = "paragraph"> Levante Brewing is a little outside of town but that\'s what makes it unique. Levante offers a cool/hip vibe with its garage-like structure.</p2>' +
+      '<p3 class = "paragraph"> Levante has a unique, local selection of brews to enjoy while you play Jenga or enjoy the outdoor seating.</p3>' +
       '</div>'
   });
 
-  var masInfo = new google.maps.InfoWindow({
+  var barnsInfo = new google.maps.InfoWindow({
     content: '<div id="infobox">' +
-      '<h1 class="title">My Home!</h1><h2>18th St & Michigan ave</h2>' +
-      'This is where I live! Smack dab in the South Loop.  ' +
-      'It\'s a fantastic neighborhood with bars and restaurants.  ' +
-      'And if you happen to be a Bears fan, you\'re right next to Soldier Field.' +
+      '<h1 class="title"><a href=http://www.barnabyswestchester.com/" target="blank">Barnaby\'s West Chester</h1></a>' +
+      '<p1 class = "paragraph"> 15 S HIGH ST WEST CHESTER, PA 19382</p1>' +
+      '<br> </br>' +
+      '<p2 class = "paragraph"> Barnaby\'s is a great American Restuarant/Bar in town. It\'s a good place to start your night out as they have an outside bar and 3 other bars inside.</p2>' +
       '</div>'
   });
 
-  var loveAgainInfo = new google.maps.InfoWindow({
+  var kildaresInfo = new google.maps.InfoWindow({
     content: '<div id="infobox">' +
-      '<h1 class="title">Dusek\'s Punch Bar</h1><h2>1227 W 18th Street</h2>' +
-      'This is by far one of my absolute favorite place\'s in the entire city.  ' +
-      'Underneath the Dusek\'s Restuarant is a hidden gem where they serve eclectic punch mixes.  ' +
-      'The ambience is amazing, and the drinks are strong.  Take an Uber or a taxi if you\'re heading over.' +
+      '<h1 class="title"><a href=http://www.kildarespubwc.com/" target="blank">Kildares Irish Pub - West Chester, PA</h1></a>' +
+      '<p1 class = "paragraph"> 18 W GAY ST WEST CHESTER, PA 19380</p1>' +
+      '<br> </br>' +
+      '<p2 class = "paragraph"> Kildares turns into a dark, sweaty, loud nightclub on the weekends. They usually charge a $2 entry fee which gets you access to long bathroom lines, a gross dance floor, and 2 bar areas. </p2>' +
+      '<p3 class = "paragraph"> Just kidding, I love Kildares.</p3>' +
       '</div>'
   });
 
-  var diaDoceInfo = new google.maps.InfoWindow({
+  var ryansInfo = new google.maps.InfoWindow({
     content: '<div id="infobox">' +
-      '<h1 class="title">Mercer 113</h1><h2>113 W Hubbard Street</h2>' +
-      'A bar/nightclub that is perfect for going out on a Friday or Saturday night.  ' +
-      'It\'s not a posh club but you\'ll still feel like your at a nice upscale bar.  ' +
-      'Get there before the line builds and you\'ll have a great night!' +
+      '<h1 class="title"><a href=http://ryans-pub.com/" target="blank">Ryan\'s Pub</h1></a>' +
+      '<p1 class = "paragraph"> 124 W GAY ST WEST CHESTER, PA 19380</p1>' +
+      '<br> </br>' +
+      '<p2 class = "paragraph"> Ryan\'s Pub is a homey, fan favorite pub in town. The classic Irish pub offers exceptional food and an upstairs and downstairs bar.</p2>' +
+      '<p3 class = "paragraph"> To me, Ryan\'s Pub seemed like an "upperclassmen\'s bar" for a more mature crowd.</p3>' +
       '</div>'
   });
 
-  var bonBon = new google.maps.Marker({
+  var ironHillInfo = new google.maps.InfoWindow({
+    content: '<div id="infobox">' +
+      '<h1 class="title"><a href=https://www.ironhillbrewery.com/west-chester-pa" target="blank">Iron Hill Brewery & Restaurant</h1></a>' +
+      '<p1 class = "paragraph"> 3 W GAY ST WEST CHESTER, PA 19380</p1>' +
+      '<br> </br>' +
+      '<p2 class = "paragraph"> Iron Hill is a chain brewery/restaurant but I had to include their West Chester location to my list of favorite bars/breweries.</p2>' +
+      '<p3 class = "paragraph"> Iron Hill has delicious food as well as fancy craft brews. Their interior and design is excellent and modern, creating a great experience.</p3>' +
+      '</div>'
+  });
+
+  var levante = new google.maps.Marker({
     position: {
-      lat: 39.959006,
-      lng: -75.607625
+      lat: 39.949023,
+      lng: -75.587938
     },
-    map: map,
-    title: 'Bon Bon Sushi'
+    map: map0,
+    title: 'Levante Brewing'
   });
 
-  var mas = new google.maps.Marker({
+  var barnabys = new google.maps.Marker({
     position: {
-      lat: 39.960265,
-      lng: -75.603004
+      lat: 39.959451,
+      lng: -75.604017
     },
-    map: map,
-    title: 'Más Mexicali Cantina'
+    map: map0,
+    title: 'Barnaby\'s West Chester'
   });
 
-  var loveAgain = new google.maps.Marker({
+  var kildares = new google.maps.Marker({
     position: {
-      lat: 39.958445,
-      lng: -75.605327
+      lat: 39.960126,
+      lng: -75.605655
     },
-    map: map,
-    title: 'Love Again Local'
+    map: map0,
+    title: 'Kildares Irish Pub - West Chester, PA'
   });
 
-  var diaDoce = new google.maps.Marker({
+  var ryans = new google.maps.Marker({
     position: {
-      lat: 39.958586,
-      lng: -75.603630
+      lat: 39.959566,
+      lng: -75.606840
     },
-    map: map,
-    title: 'Dia Doce Gourmet Cupcakes'
+    map: map0,
+    title: 'Ryan\'s Pub'
   });
 
-  google.maps.event.addListener(bonBon, 'click', function() {
-    GuidedTour();
+  var ironHill = new google.maps.Marker({
+    position: {
+      lat: 39.960514,
+      lng: -75.605486
+    },
+    map: map0,
+    title: 'Iron Hill Brewery & Restaurant'
   });
 
-  google.maps.event.addListener(mas, 'click', function() {
-    GuidedTour();
+  google.maps.event.addListener(levante, 'click', function() {
+    levanteClicked();
   });
 
-  google.maps.event.addListener(loveAgain, 'click', function() {
-    GuidedTour();
+  google.maps.event.addListener(barnabys, 'click', function() {
+    barnsClicked();
   });
 
-  google.maps.event.addListener(diaDoce, 'click', function() {
-    GuidedTour();
+  google.maps.event.addListener(kildares, 'click', function() {
+    kildaresClicked();
   });
 
-  function GuidedTour() {
-    diaDoceInfo.close(map0, loveAgain);
-    map0.panTo(mas.getPosition());
-    masInfo.open(map0, mas);
-    window.setTimeout(function() {
-      map0.panTo(bonBon.getPosition());
-      masInfo.close(map0, mas);
-      bonBonInfo.open(map0, bonBon);
-    }, 6000)
-    window.setTimeout(function() {
-      map0.panTo(loveAgain.getPosition());
-      bonBonInfo.close(map0, bonBon);
-      loveAgainInfo.open(map0, loveAgain);
-    }, 11000)
-    window.setTimeout(function() {
-      map0.panTo(diaDoce.getPosition());
-      loveAgainInfo.close(map0, loveAgain);
-      diaDoceInfo.open(map0, diaDoce);
-    }, 16000)
+  google.maps.event.addListener(ryans, 'click', function() {
+    ryansClicked();
+  });
+
+  google.maps.event.addListener(ironHill, 'click', function() {
+    ironHillClicked();
+  });
+
+  function levanteClicked() {
+    map0.panTo(levante.getPosition());
+    levanteInfo.open(map0, levante);
   }
+
+  function barnsClicked() {
+    map0.panTo(barnabys.getPosition());
+    barnsInfo.open(map0, barnabys);
+  }
+
+  function kildaresClicked() {
+    map0.panTo(kildares.getPosition());
+    kildaresInfo.open(map0, kildares);
+  }
+
+  function ryansClicked() {
+    map0.panTo(ryans.getPosition());
+    ryansInfo.open(map0, ryans);
+  }
+
+  function ironHillClicked() {
+    map0.panTo(ironHill.getPosition());
+    ironHillInfo.open(map0, ironHill);
+  }
+
 }
 google.maps.event.addDomListener(window, 'load', initialize);

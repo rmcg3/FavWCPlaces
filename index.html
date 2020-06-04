@@ -12,8 +12,8 @@
     <div class="buttonContainer">
         <button onclick="showPanel(0,'#7851a9')"><strong>Food</strong></button>
         <button onclick="showPanel(1,'#7851a9')"><strong>Bars/Breweries</strong></button>
-        <button onclick="showPanel(2,'#7851a9')"><strong>Other</strong></button>
-        <button onclick="showPanel(3,'#7851a9')"><strong>Tab 4</strong></button>
+        <button onclick="showPanel(2,'#7851a9')"><strong>Art/History/Museums</strong></button>
+        <button onclick="showPanel(3,'#7851a9')"><strong>Shops</strong></button>
     </div>
 
 <!-- Tab 1 -->
@@ -70,7 +70,7 @@
         html { height: auto; }
         body { height: auto; margin: 0; padding: 0 }
         #infobox { margin: 0px }
-        #map-canvas2 { height: 460px }
+        #map-canvas1 { height: 460px }
       </style>
 
       <script async defer type="text/javascript" src="otherMapAPI.js"></script>
@@ -79,7 +79,7 @@
           <center>
           <p>Come take a look at my favorite places in West Chester!</p>
           <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
-          <div id="map-canvas2"></div>
+          <div id="map-canvas1"></div>
           </center>
         </div>
 
@@ -93,16 +93,17 @@
         html { height: auto; }
         body { height: auto; margin: 0; padding: 0 }
         #infobox { margin: 0px }
-        #map-canvas { height: 460px }
+        #map-canvas2 { height: 460px }
       </style>
 
-
+        <script async defer type="text/javascript" src="shopsAPI.js"></script>
 
 
       <div class ="centerText">
           <center>
           <p>Come take a look at my favorite places in West Chester!</p>
           <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
+          <div id="map-canvas2"></div>
           </center>
         </div>
 

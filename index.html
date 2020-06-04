@@ -11,10 +11,12 @@
 <div class="tabContainer">
     <div class="buttonContainer">
         <button onclick="showPanel(0,'#7851a9')"><strong>Food</strong></button>
-        <button onclick="showPanel(1,'#7851a9')"><strong>Bars/Nightlife</strong></button>
+        <button onclick="showPanel(1,'#7851a9')"><strong>Bars/Breweries</strong></button>
         <button onclick="showPanel(2,'#7851a9')"><strong>Other</strong></button>
-        <button onclick="showPanel(3,'#7851a9')">Tab 4</button>
+        <button onclick="showPanel(3,'#7851a9')"><strong>Tab 4</strong></button>
     </div>
+
+<!-- Tab 1 -->
     <div class="tabPanel">
 
       <style type="text/css">
@@ -24,19 +26,68 @@
         #map-canvas { height: 460px }
       </style>
 
-      <script type="text/javascript" src="mapapi.js"></script>
+      <script type="text/javascript" src="foodMapAPI.js"></script>
 
       <div class ="centerText">
       		<center>
           <p>Come take a look at my favorite places in West Chester!</p>
       		<p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcgarry3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
+          <div id="map-canvas"></div>
       		</center>
         </div>
-      		<div id="map-canvas"></div>
+
 
 
     </div>
 
+<!-- Tab 2 -->
+    <div class="tabPanel">
+      <style type="text/css">
+        html { height: auto; }
+        body { height: auto; margin: 0; padding: 0 }
+        #infobox { margin: 0px }
+        #map-canvas0 { height: 460px }
+      </style>
+
+
+      <script async defer type="text/javascript" src="barMapAPI.js"></script>
+
+      <div class ="centerText">
+          <center>
+          <p>Come take a look at my favorite places in West Chester!</p>
+          <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
+          <div id="map-canvas0"></div>
+          </center>
+        </div>
+
+
+
+    </div>
+
+<!-- Tab 3 -->
+    <div class="tabPanel">
+      <style type="text/css">
+        html { height: auto; }
+        body { height: auto; margin: 0; padding: 0 }
+        #infobox { margin: 0px }
+        #map-canvas2 { height: 460px }
+      </style>
+
+      <script async defer type="text/javascript" src="otherMapAPI.js"></script>
+
+      <div class ="centerText">
+          <center>
+          <p>Come take a look at my favorite places in West Chester!</p>
+          <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
+          <div id="map-canvas2"></div>
+          </center>
+        </div>
+
+
+
+    </div>
+
+<!-- Tab 4 -->
     <div class="tabPanel">
       <style type="text/css">
         html { height: auto; }
@@ -46,7 +97,7 @@
       </style>
 
 
-      <script async defer type="text/javascript" src="mapapi.js"></script>
+
 
       <div class ="centerText">
           <center>
@@ -54,47 +105,7 @@
           <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
           </center>
         </div>
-          <div id="map-canvas"></div>
-    </div>
-    <div class="tabPanel">
-      <style type="text/css">
-        html { height: auto; }
-        body { height: auto; margin: 0; padding: 0 }
-        #infobox { margin: 0px }
-        #map-canvas { height: 460px }
-      </style>
 
-
-      <script async defer type="text/javascript" src="mapapi.js"></script>
-
-      <div class ="centerText">
-          <center>
-          <p>Come take a look at my favorite places in West Chester!</p>
-          <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
-          </center>
-        </div>
-          <div id="map-canvas"></div>
-
-
-    </div>
-    <div class="tabPanel">
-      <style type="text/css">
-        html { height: auto; }
-        body { height: auto; margin: 0; padding: 0 }
-        #infobox { margin: 0px }
-        #map-canvas { height: 460px }
-      </style>
-
-
-      <script async defer type="text/javascript" src="mapapi0.js"></script>
-
-      <div class ="centerText">
-          <center>
-          <p>Come take a look at my favorite places in West Chester!</p>
-          <p>Fun with Google Maps API <font size="3"><a href="https://github.com/rmcg3/FavWCPlaces" target="blank">(Source Code Here)</a></font></p>
-          </center>
-        </div>
-          <div id="map-canvas1"></div>
 
     </div>
 </div>

@@ -7,7 +7,7 @@ function initialize() {
     zoom: 16
   };
 
-  var map = new google.maps.Map(document.getElementById('map-canvas1'),
+  var map0 = new google.maps.Map(document.getElementById('map-canvas0'),
     mapOptions);
 
 
@@ -100,23 +100,23 @@ function initialize() {
   });
 
   function GuidedTour() {
-    diaDoceInfo.close(map, loveAgain);
-    map.panTo(mas.getPosition());
-    masInfo.open(map, mas);
+    diaDoceInfo.close(map0, loveAgain);
+    map0.panTo(mas.getPosition());
+    masInfo.open(map0, mas);
     window.setTimeout(function() {
-      map.panTo(bonBon.getPosition());
-      masInfo.close(map, mas);
-      bonBonInfo.open(map, bonBon);
+      map0.panTo(bonBon.getPosition());
+      masInfo.close(map0, mas);
+      bonBonInfo.open(map0, bonBon);
     }, 6000)
     window.setTimeout(function() {
-      map.panTo(loveAgain.getPosition());
-      bonBonInfo.close(map, bonBon);
-      loveAgainInfo.open(map, loveAgain);
+      map0.panTo(loveAgain.getPosition());
+      bonBonInfo.close(map0, bonBon);
+      loveAgainInfo.open(map0, loveAgain);
     }, 11000)
     window.setTimeout(function() {
-      map.panTo(diaDoce.getPosition());
-      loveAgainInfo.close(map, loveAgain);
-      diaDoceInfo.open(map, diaDoce);
+      map0.panTo(diaDoce.getPosition());
+      loveAgainInfo.close(map0, loveAgain);
+      diaDoceInfo.open(map0, diaDoce);
     }, 16000)
   }
 }

@@ -36,7 +36,7 @@ function initialize() {
       '<p1 class = "paragraph"> 310 S HIGH ST WEST CHESTER, PA 19382</p1>' +
       '<br> </br>' +
       '<p2 class = "paragraph"> The West Chester Music Store is one of my favorite shops to go to as a guitar player.</p2>' +
-      '<p3 class = "paragraph"> They have a unique selection of guitars and amplifiers and other instruments. I purchase my guitar strings here frequently to support local business.</p3>' +
+      '<p3 class = "paragraph"> They have a unique selection of guitars, amplifiers, and other instruments. I purchase my guitar strings here frequently to support local business.</p3>' +
       '</div>'
   });
 
